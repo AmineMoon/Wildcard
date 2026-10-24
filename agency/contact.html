@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Wildcard creative studio</title>
-  <meta name="description" content="Start a project with Wildcard. Tell us about your brand, website or campaign and we'll reply within one working day. Studios in London and Lisbon.">
+  <meta name="description" content="Start a project with Wildcard. Tell us about your brand, website or campaign and we'll reply within one working day. Based in Salé, Morocco.">
   <meta property="og:title" content="Contact — Wildcard creative studio">
-  <meta property="og:description" content="Start a project with Wildcard. Tell us about your brand, website or campaign and we'll reply within one working day. Studios in London and Lisbon.">
+  <meta property="og:description" content="Start a project with Wildcard. Tell us about your brand, website or campaign and we'll reply within one working day. Based in Salé, Morocco.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/img/og-image.svg">
   <meta name="theme-color" content="#111111">
@@ -37,21 +37,22 @@
     <section class="page-hero container" aria-labelledby="page-title">
       <span class="label">Contact</span>
       <h1 id="page-title" data-zt="heading">Let's make something <em style="font-style:normal;color:var(--brand)">loud.</em></h1>
-      <p>Fill in the form, or just email  . Either way, a real human replies within one working day.</p>
+      <p>Fill in the form, or just email <a href="mailto:amine.el.assaly.24@gmail.com">amine.el.assaly.24@gmail.com</a>. Either way, a real human replies within one working day.</p>
     </section>
 
     <section class="container" style="padding-bottom:clamp(80px,10vw,140px)" aria-label="Project enquiry">
       <div class="contact-grid">
-        <!-- Wire this form: set action to your Formspree endpoint (https://formspree.io/f/xxxx)
-             or add name="contact" data-netlify="true" when deploying on Netlify, then remove data-demo-contact. -->
-        <form class="form" action="#" method="post" data-demo-contact novalidate>
+        <form class="form" id="contact-form" action="https://formspree.io/f/mwllpdva" method="POST">
+          <input type="hidden" name="_subject" value="New project enquiry — Wildcard">
+          <input type="hidden" name="form_type" value="project_enquiry">
+          <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="two">
             <div class="field"><label for="c-name">Your name *</label><input id="c-name" name="name" autocomplete="name" placeholder="Jane Doe" required><span class="error" aria-live="polite"></span></div>
             <div class="field"><label for="c-email">Email *</label><input id="c-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required><span class="error" aria-live="polite"></span></div>
           </div>
           <div class="field"><label for="c-company">Company</label><input id="c-company" name="company" autocomplete="organization" placeholder="Company name"></div>
           <fieldset class="field"><legend>What can we help with?</legend><div class="chips"><label><input type="checkbox" name="services" value="Brand strategy"><span>Brand strategy</span></label><label><input type="checkbox" name="services" value="Visual identity"><span>Visual identity</span></label><label><input type="checkbox" name="services" value="Website"><span>Website</span></label><label><input type="checkbox" name="services" value="App / product"><span>App / product</span></label><label><input type="checkbox" name="services" value="Campaign"><span>Campaign</span></label><label><input type="checkbox" name="services" value="Not sure yet"><span>Not sure yet</span></label></div></fieldset>
-          <fieldset class="field"><legend>Budget</legend><div class="chips"><label><input type="radio" name="budget" value="Under £15k" required><span>Under £15k</span></label><label><input type="radio" name="budget" value="£15–40k"><span>£15–40k</span></label><label><input type="radio" name="budget" value="£40–100k"><span>£40–100k</span></label><label><input type="radio" name="budget" value="£100k+"><span>£100k+</span></label></div></fieldset>
+          <fieldset class="field"><legend>Budget</legend><div class="chips"><label><input type="radio" name="budget" value="Under £15k" required><span>Under £15k</span></label><label><input type="radio" name="budget" value="£15–40k"><span>£15–40k</span></label><label><input type="radio" name="budget" value="£40–100k"><span>£40–100k</span></label><label><input type="radio" name="budget" value="£100k+"><span>£100k+</span></label></div><span class="error" aria-live="polite"></span></fieldset>
           <div class="field"><label for="c-msg">Tell us about the project *</label><textarea id="c-msg" name="message" placeholder="Goals, timelines, links, anything that helps." required></textarea><span class="error" aria-live="polite"></span></div>
           <div><button class="btn btn-dark" type="submit">Send enquiry <span class="arrow">&nearr;</span></button></div>
           <p class="form-status" role="status" aria-live="polite"></p>
@@ -61,18 +62,17 @@
           <div class="aside-card">
             <h2>New business</h2>
             <p>Talk directly to Nia, our founder.</p>
-            <a class="big-link" href="mailto:amine.el.assaly.24@gmail.com">hello@wildcard.example</a>
+            <a class="big-link" href="mailto:amine.el.assaly.24@gmail.com">amine.el.assaly.24@gmail.com</a>
           </div>
           <div class="aside-card dark">
-            <h2>Studios</h2>
+            <h2>Based in</h2>
             <div class="offices">
-              <div><time data-tz="Europe/London">09:00</time><b>London</b><small>12 Canal Yard, E2 8AA</small></div>
-              <div><time data-tz="Europe/Lisbon">09:00</time><b>Lisbon</b><small>Rua das Flores 48, 1200-195</small></div>
+              <div><time data-tz="Africa/Casablanca">09:00</time><b>Salé</b><small>Rte de Rabat, Morocco</small></div>
             </div>
           </div>
           <div class="aside-card">
             <h2>Careers</h2>
-            <p>We're always happy to meet brilliant designers and developers. Send your portfolio to jobs@wildcard.example.</p>
+            <p>We're always happy to meet brilliant designers and developers.</p>
           </div>
         </aside>
       </div>
@@ -83,9 +83,11 @@
       <div class="footer-grid">
         <div>
           <h2>Get the good stuff.<br>One email a month.</h2>
-          <!-- Wire this form: point action at Formspree (https://formspree.io/f/xxxx) or add data-netlify="true" on Netlify. -->
-          <form class="newsletter" action="#" method="post" data-demo-form novalidate>
+          <form class="newsletter" action="https://formspree.io/f/mwllpdva" method="POST">
             <label class="visually-hidden" for="nl-email">Email address</label>
+            <input type="hidden" name="_subject" value="Newsletter subscription — Wildcard">
+            <input type="hidden" name="form_type" value="newsletter">
+            <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
             <input id="nl-email" type="email" name="email" placeholder="Your email" autocomplete="email" required>
             <button type="submit">Subscribe &rarr;</button>
           </form>
@@ -101,7 +103,7 @@
         </div>
         <div>
           <h3>Say hello</h3>
-         <address>amine.el.assaly.24@gemail.com<br> +212 613350256 <br>Rte de Rabat<br><br>sale</address>
+            <address>amine.el.assaly.24@gmail.com<br> +212 621778795 <br> Salé <br> Rte de Rabat <br></address>
         </div>
       </div>
       <div class="footer-word" aria-hidden="true">wildcard</div>
