@@ -42,18 +42,17 @@
 
     <section class="container" style="padding-bottom:clamp(80px,10vw,140px)" aria-label="Project enquiry">
       <div class="contact-grid">
-        <form class="form" id="contact-form" action="https://formspree.io/f/mwllpdva" method="POST">
-          <input type="hidden" name="_subject" value="New project enquiry — Wildcard">
+                <form class="form" id="contact-form" action="https://formspree.io/f/mwllpdva" method="POST">
+        <!--   <input type="hidden" name="_subject" value="New project enquiry — Wildcard">
           <input type="hidden" name="form_type" value="project_enquiry">
-          <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="two">
-            <div class="field"><label for="c-name">Your name *</label><input id="c-name" name="name" autocomplete="name" placeholder="Jane Doe" required><span class="error" aria-live="polite"></span></div>
-            <div class="field"><label for="c-email">Email *</label><input id="c-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required><span class="error" aria-live="polite"></span></div>
-          </div>
-          <div class="field"><label for="c-company">Company</label><input id="c-company" name="company" autocomplete="organization" placeholder="Company name"></div>
+          <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">-->
+          <div class="field"><input id="c-name" name="name" autocomplete="name" placeholder="Name *" required><span class="error" aria-live="polite"></span></div>
+          <div class="field"><input id="c-email" name="email" type="email" autocomplete="email" placeholder="Email *" required><span class="error" aria-live="polite"></span></div>
+          <div class="field"><input id="c-phone" name="phone" type="tel" autocomplete="tel" placeholder="Phone number *" required><span class="error" aria-live="polite"></span></div>
+          <div class="field"><input id="c-company" name="company" autocomplete="organization" placeholder="Company"></div>
           <fieldset class="field"><legend>What can we help with?</legend><div class="chips"><label><input type="checkbox" name="services" value="Brand strategy"><span>Brand strategy</span></label><label><input type="checkbox" name="services" value="Visual identity"><span>Visual identity</span></label><label><input type="checkbox" name="services" value="Website"><span>Website</span></label><label><input type="checkbox" name="services" value="App / product"><span>App / product</span></label><label><input type="checkbox" name="services" value="Campaign"><span>Campaign</span></label><label><input type="checkbox" name="services" value="Not sure yet"><span>Not sure yet</span></label></div></fieldset>
-          <fieldset class="field"><legend>Budget</legend><div class="chips"><label><input type="radio" name="budget" value="Under £15k" required><span>Under £15k</span></label><label><input type="radio" name="budget" value="£15–40k"><span>£15–40k</span></label><label><input type="radio" name="budget" value="£40–100k"><span>£40–100k</span></label><label><input type="radio" name="budget" value="£100k+"><span>£100k+</span></label></div><span class="error" aria-live="polite"></span></fieldset>
-          <div class="field"><label for="c-msg">Tell us about the project *</label><textarea id="c-msg" name="message" placeholder="Goals, timelines, links, anything that helps." required></textarea><span class="error" aria-live="polite"></span></div>
+          <fieldset class="field"><legend>Budget</legend><div class="chips"><label><input type="radio" name="budget" value="$100" required><span>$100</span></label><label><input type="radio" name="budget" value="$200"><span>$200</span></label><label><input type="radio" name="budget" value="$300"><span>$300</span></label><label><input type="radio" name="budget" value="$1000"><span>$1000</span></label></div><span class="error" aria-live="polite"></span></fieldset>
+          <div class="field"><textarea id="c-msg" name="message" placeholder="Tell us about the project *" required></textarea><span class="error" aria-live="polite"></span></div>
           <div><button class="btn btn-dark" type="submit">Send enquiry <span class="arrow">&nearr;</span></button></div>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>

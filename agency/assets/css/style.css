@@ -316,3 +316,19 @@ main { overflow-x: clip; }
 .footer-grid h2 { font-weight: 700; letter-spacing: -.03em; }
 .cta h2 a::after { content: "\2197"; font-size: .45em; vertical-align: top; margin-left: .05em; display: inline-block; transition: transform .4s var(--ease); }
 .cta h2 a:hover::after { transform: translate(6px, -6px); }
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 680px) {
+  .form { gap: 24px; }
+  .field input, .field textarea { font-size: 1.05rem; }
+  .chips { gap: 8px; }
+  .chips span { padding: 8px 14px; font-size: .9rem; }
+  .contact-grid { gap: clamp(40px, 8vw, 60px); }
+}
+
+@media (max-width: 420px) {
+  .btn { padding: 14px 22px; font-size: .95rem; }
+  .page-hero h1 { font-size: clamp(2.2rem, 12vw, 3.2rem); }
+  .section-top { flex-direction: column; align-items: flex-start; }
+  .marquee { margin: 40px -16px; }
+}
